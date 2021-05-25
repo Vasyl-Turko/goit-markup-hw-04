@@ -133,7 +133,8 @@ body {
 
 .contacts-list-item {
   color: var(--secondary-font-color);
-  display: block;
+  display: flex;
+  align-items: center;
   padding-bottom: 32px;
   padding-top: 32px;
 }
@@ -179,7 +180,7 @@ body {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/img-bg.jpg);
+    url(../images/img-bg.jpg);
   max-width: 1600px;
   margin: 0 auto;
   padding-top: 200px;
@@ -226,6 +227,7 @@ body {
 }
 
 .icon-box {
+  height: 120px;
   display: inline-block;
   display: flex;
   justify-content: center;
@@ -304,7 +306,7 @@ body {
   margin-top: 50px;
 }
 .members-list li:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 .members-list li {
@@ -330,8 +332,8 @@ body {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
 .social-webs {
@@ -368,15 +370,25 @@ body {
   fill: var(--secondary-color);
 }
 
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .clients-list {
   display: flex;
-  justify-content: space-between;
+
   margin-top: 50px;
-  margin-bottom: 94px;
+}
+
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .client-item-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   background-color: transparent;
@@ -404,6 +416,10 @@ body {
 }
 
 /*===footer===*/
+
+.contact-box {
+  margin-right: 70px;
+}
 
 .downweb {
   background-color: var(--footer-bg-color);
@@ -465,7 +481,7 @@ body {
   fill: var(--secondary-color);
 }
 
-.downfoot {
+.downfoot:not(:last-child) {
   margin-right: 10px;
 }
 /*===portfolio main===*/
@@ -477,6 +493,7 @@ body {
 }
 
 .portfolio-btn {
+  height: 38px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1, 63;
@@ -484,7 +501,29 @@ body {
   letter-spacing: 0.03em;
   background-color: var(--about-us-bgr);
   cursor: pointer;
+  border: none;
 }
+
+.one {
+  width: 73px;
+}
+
+.two {
+  width: 128px;
+}
+
+.three {
+  width: 145px;
+}
+
+.four {
+  width: 103px;
+}
+
+.five {
+  width: 130px;
+}
+
 .portfolio-buttons-list li:not(:last-child) {
   margin-right: 8px;
 }
@@ -500,7 +539,6 @@ body {
 
 .skills-list-item:focus,
 .skills-list-item:hover {
-  border: 1px solid var(--skills-border-color);
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);

@@ -404,8 +404,8 @@ body {
   border-radius: 4px;
 }
 
-.client-item-link .clients-icon:hover,
-.client-item-link .clients-icon:focus {
+.client-item-link:hover .clients-icon,
+.client-item-link:focus .clients-icon {
   fill: var(--accent-color);
 }
 
@@ -456,7 +456,7 @@ body {
 
 .footer-box {
   display: flex;
-  justify-content: baseline;
+  align-items: baseline;
 }
 
 .info-box {
